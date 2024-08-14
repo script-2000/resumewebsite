@@ -16,13 +16,13 @@ export default defineConfig(function (_a) {
         },
         base: "/resumewebsite/",
         build: {
-          rollupOptions: {
-            output: {
-              entryFileNames: `[name].[hash].js`, // Ensure hashed filenames for cache busting
-              chunkFileNames: `[name].[hash].js`,
-              assetFileNames: `[name].[hash][extname]`,
+            rollupOptions: {
+                output: {
+                    entryFileNames: "[name].[hash].js", // Ensure hashed filenames for cache busting
+                    chunkFileNames: "[name].[hash].js",
+                    assetFileNames: "[name].[hash][extname]",
+                },
             },
-          },
         },
         plugins: [react()],
     };

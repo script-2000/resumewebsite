@@ -15,7 +15,7 @@ function HomePage() {
               Development
             </h1>
             <img
-              src="/mypic.jpg"
+              src="/resumewebsite/mypic.jpg"
               className="h-[23rem] max-w-[23rem] rounded-3xl mt-6 sm:mt-0"
             />
           </div>

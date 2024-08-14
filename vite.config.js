@@ -11,10 +11,10 @@ export default defineConfig(function (_a) {
         },
         resolve: {
             alias: {
-                "@/": "".concat(path.resolve(__dirname, "src"), "/"),
+                '@': path.resolve(__dirname, "./src"),
             },
         },
-        base: "/resumewebsite",
+        base: "/",
         plugins: [react()],
     };
 });

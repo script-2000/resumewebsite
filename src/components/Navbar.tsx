@@ -15,7 +15,26 @@ import { useEffect, useState } from "react";
 export default function Navbar() {
   const [navigation, setNavigation] = useState([
     { name: "Home", href: "/", current: true },
-    { name: "Resume", href: "https://github.com/script-2000/resume/blob/caeee203328225f10e3890e7e2fca28c67ef25f3/RESUMEUPDATE.pdf", current: false },
+    {
+      name: "Skills",
+      href: "#skills",
+      current: false,
+    },
+    {
+      name: "programing languages",
+      href: "#programing-languages",
+      current: false,
+    },
+    {
+      name: "Projects",
+      href: "#projects",
+      current: false,
+    },
+    {
+      name: "Resume",
+      href: "https://github.com/script-2000/resume/blob/caeee203328225f10e3890e7e2fca28c67ef25f3/RESUMEUPDATE.pdf",
+      current: false,
+    },
   ]);
   const [darkmood, setDarkmood] = useState<boolean>(() => {
     return Cookies.get("darkmode") === "true";
@@ -23,6 +42,10 @@ export default function Navbar() {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
+    if (Cookies.get("darkmode") === undefined) {
+      Cookies.set("darkmode", "true");
+    }
+
     document.documentElement.setAttribute(
       "data-mode",
       darkmood ? "dark" : "light"
@@ -60,28 +83,20 @@ export default function Navbar() {
   }
 
   return (
-    <Disclosure as="nav" >
+    <Disclosure as="nav" className={"fixed top-0 left-0 right-0 bg-gray-800 shadow-lg z-50"}>
       <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button */}
             <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset ">
               <span className="sr-only">Open main menu.</span>
-              <Bars3Icon
-                aria-hidden="true"
-                className="block h-6 w-6"
-              />
-              <XMarkIcon
-                aria-hidden="true"
-                className="hidden h-6 w-6"
-              />
+              <Bars3Icon aria-hidden="true" className="block h-6 w-6" />
+              <XMarkIcon aria-hidden="true" className="hidden h-6 w-6" />
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-center justify-between">
             <div className="flex flex-shrink-0 items-center">
-              <h2 className="font-semibold text-xl">
-               
-              </h2>
+              <h2 className="font-semibold text-xl"></h2>
             </div>
             <div className="hidden sm:block">
               <div className="flex space-x-4">
@@ -90,13 +105,13 @@ export default function Navbar() {
                     key={item.name}
                     href={item.href}
                     aria-current={item.current ? "page" : undefined}
+                    onClick={() => setcurrent(index)}
                     className={classNames(
                       item.current
-                        ? "text-gray-300 hover:bg-gray-700 hover:text-white "
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "rounded-md px-3 py-2 font-medium"
+                        ? "bg-blue-600 text-white shadow-lg"
+                        : "text-gray-300 hover:bg-blue-500 hover:text-white hover:shadow-md",
+                      "block rounded-lg px-4 py-2 text-base font-medium transition-all duration-200 ease-in-out"
                     )}
-                    onClick={() => setcurrent(index)}
                   >
                     {item.name}
                   </a>
@@ -131,9 +146,9 @@ export default function Navbar() {
               aria-current={item.current ? "page" : undefined}
               className={classNames(
                 item.current
-                  ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium"
+                  ? "bg-blue-600 text-white shadow-lg"
+                  : "text-gray-300 hover:bg-blue-500 hover:text-white hover:shadow-md",
+                "block rounded-lg px-4 py-2 text-base font-medium transition-all duration-200 ease-in-out"
               )}
             >
               {item.name}

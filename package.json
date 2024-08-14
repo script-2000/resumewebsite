@@ -1,9 +1,8 @@
 {
   "name": "resumewebsite",
   "version": "0.0.0",
-  "private": true,
-  "homepage": "https://script-2000.github.io/resumewebsite/",
   "type": "module",
+  "homepage": "http://localhost:4173",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

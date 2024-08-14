@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [navigation, setNavigation] = useState([
-    { name: "Home", href: "/", current: true },
+    { name: "Home", href: "/resumewebsite", current: true },
     {
       name: "Skills",
       href: "#skills",

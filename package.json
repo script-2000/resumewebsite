@@ -2,6 +2,7 @@
   "name": "resumewebsite",
   "version": "0.0.0",
   "type": "module",
+  "homepage":"https://script-2000.github.io/resumewebsite/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

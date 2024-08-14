@@ -1,10 +1,9 @@
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig, loadEnv } from "vite";
-
-export default defineConfig(({ mode }) => {
-    const env = loadEnv(mode, process.cwd(), "");
-
+export default defineConfig(function (_a) {
+    var mode = _a.mode;
+    var env = loadEnv(mode, process.cwd(), "");
     return {
         define: {
             "process.env.BASE_URL": JSON.stringify(env.BASE_URL),
@@ -15,13 +14,13 @@ export default defineConfig(({ mode }) => {
                 '@': path.resolve(__dirname, "./src"),
             },
         },
-        base: "/", // Ensure this matches your GitHub Pages path
+        base: "/resumewebsite",
         build: {
             rollupOptions: {
                 output: {
-                    entryFileNames: `[name].[hash].js`,  // Ensure hashed filenames for cache busting
-                    chunkFileNames: `[name].[hash].js`,
-                    assetFileNames: `[name].[hash][extname]`,
+                    entryFileNames: "[name].[hash].js", // Ensure hashed filenames for cache busting
+                    chunkFileNames: "[name].[hash].js",
+                    assetFileNames: "[name].[hash][extname]",
                 },
             },
         },

@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => {
         '@': path.resolve(__dirname, "./src"),
       },
     },
-    base:"/",
+    base:"/resumewebsite",
     build: {
       rollupOptions: {
           output: {

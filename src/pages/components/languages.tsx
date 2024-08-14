@@ -4,27 +4,27 @@ import { useInView } from "react-intersection-observer";
 const languages = [
   {
     name: "React",
-    icon: "/react.png",
+    icon: "/resumewebsite/react.png",
   },
   {
     name: "Vue",
-    icon: "/vue.png",
+    icon: "/resumewebsite/vue.png",
   },
   {
     name: "HTML",
-    icon: "/html.png",
+    icon: "/resumewebsite/html.png",
   },
   {
     name: "Python",
-    icon: "/python.png",
+    icon: "/resumewebsite/python.png",
   },
   {
     name: "Javascript",
-    icon: "/javascript.png",
+    icon: "/resumewebsite/javascript.png",
   },
   {
     name: "Solidity",
-    icon: "/solidity.png",
+    icon: "/resumewebsite/solidity.png",
   },
 ];
 

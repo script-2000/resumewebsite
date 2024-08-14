@@ -9,7 +9,7 @@ const projects = [
       "A web3 social media IOS and Android platform built on the Ethereum blockchain with the capability of creating, sharing, and monetizing content as well as interacting with other users.",
     link: "",
     image: "/logo.png",
-    images: ["/gallics2.png", "/gallics6.jpeg"],
+    images: ["/resumewebsite/gallics2.png", "/resumewebsite/gallics6.jpeg"],
     video: "https://streamable.com/viszc4",
   },
   {
@@ -18,7 +18,7 @@ const projects = [
       "Start mining MANT tokens 24/7 without the need to be online or have any mining equipment. Earn high returns daily depending on your MinerAnt HashPower.",
     link: "",
     image: "/minerant-logo.png",
-    images: ["/minerant1.png", "/minerant2.png"],
+    images: ["/resumewebsite/minerant1.png", "/resumewebsite/minerant2.png"],
   },
   {
     title: "Hygieiora App",
@@ -26,7 +26,7 @@ const projects = [
       "A mobile mental health app that helps users to schedule appointments with mental health professionals, track their mental health progress, and get access to mental health resources.",
     link: "",
     image: "/hygieioraapp-logo.png",
-    images: ["/hygieioraapp1.png", "/hygieioraapp2.png", "/hygieioraapp3.png"],
+    images: ["/resumewebsite/resumewebsite/hygieioraapp1.png", "/resumewebsite/resumewebsite/hygieioraapp2.png", "/resumewebsite/resumewebsite/hygieioraapp3.png"],
   },
   {
     title: "Jadaad Technologies",
@@ -34,7 +34,7 @@ const projects = [
       "Jadaad Technologies is your unified platform for mastering skills in data analysis, programming, machine learning, artificial intelligence, product design, and more. We offer in-depth courses tailored to industry needs, crash courses for quick expertise, hands-on projects to build your portfolio, and internship opportunities with startups to gain valuable experience.",
     link: "",
     image: "/jadaad-logo.png",
-    images: ["/jadaad1.png", "/jadaad2.png"],
+    images: ["/resumewebsite/jadaad1.png", "/resumewebsite/jadaad2.png"],
   },
 ];
 

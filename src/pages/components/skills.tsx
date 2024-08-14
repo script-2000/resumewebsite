@@ -4,31 +4,31 @@ import { useInView } from "react-intersection-observer";
 const skills = [
   {
     name: "Full Stack Developer",
-    icon: "/fullstack.webp",
+    icon: "/resumewebsite/fullstack.webp",
     description:
       "Throughout my career as a Full Stack Developer, I have been using a bunch of overlapping skills that help me to handle both the front-end and back-end of a web application. This includes (UX) user interface design, building and maintaining micro to large scale databases plus creating rich internet APIs and integrating various services such as payment systems, email clients, messenger systems etc. into applications which serve multiple purposes and are most efficient. Building web applications involves the use of many different languages and frameworks that enable me come up with specific solutions tailored for every project.",
   },
   {
     name: "DevSecOps Engineer",
-    icon: "/devsecops.png",
+    icon: "/resumewebsite/devsecops.png",
     description:
       "I adopt security at every stage of software development – from planning, coding and testing as well as deployment. Automation with continuous monitoring is important in safeguarding against any attacks on applications or infrastructure. My emphasis when developing software lies on secure coding practices, threat modelling and compliance standards, leading to strong, reliable and secure systems.",
   },
   {
     name: "System Hardening & Cyber Security",
-    icon: "/hardening.png",
+    icon: "/resumewebsite/hardening.png",
     description:
       "System Hardening and Cyber Security work hand in hand to safeguard computer systems and networks. System Hardening focuses on reducing vulnerabilities by configuring systems to minimize risks, applying security patches, and disabling unnecessary services. Cyber Security encompasses a broader range of practices, including threat detection, response strategies, and implementing defensive measures to protect against cyber threats and unauthorized access. Together, these approaches fortify the infrastructure, ensuring a robust defense against potential attacks and enhancing the overall security posture.",
   },
   {
     name: "Cloud Computing",
-    icon: "/cloud.jpg",
+    icon: "/resumewebsite/cloud.jpg",
     description:
       "Cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet  to offer faster innovation, flexible resources, and economies of scale. I have experience in cloud computing services such as Amazon Web Services , Microsoft Azure. I have worked on cloud-based projects that involve cloud storage, cloud security, cloud migration, cloud networking, and cloud monitoring.",
   },
   {
     name: "IT Support",
-    icon: "/support.jpg",
+    icon: "/resumewebsite/support.jpg",
     description:
       "I provide technical support to users who need assistance with their computer hardware or software. I am able to troubleshoot and diagnose computer problems, install software and hardware, and maintain computer systems. I am also able to provide support for network issues, including setting up and maintaining network connections and troubleshooting network problems.",
   },

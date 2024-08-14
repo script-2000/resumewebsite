@@ -32,7 +32,7 @@ export default function Navbar() {
     },
     {
       name: "Resume",
-      href: "https://github.com/script-2000/resume/blob/caeee203328225f10e3890e7e2fca28c67ef25f3/RESUMEUPDATE.pdf",
+      href: "https://github.com/script-2000/resume/blob/main/resume.pdf",
       current: false,
     },
   ]);

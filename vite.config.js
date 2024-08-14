@@ -14,7 +14,7 @@ export default defineConfig(function (_a) {
                 '@': path.resolve(__dirname, "./src"),
             },
         },
-        base: "/",
+        base: "/resumewebsite/",
         plugins: [react()],
     };
 });

@@ -6,7 +6,7 @@ import "./assets/raw-style.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={"/resumewebsite/"}>
       <Routes>
         <Route path="/*" element={<App />} />
       </Routes>

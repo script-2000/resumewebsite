@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => {
         '@': path.resolve(__dirname, "./src"),
       },
     },
-    base:"https://script-2000.github.io/resumewebsite/",
+    base:"/",
     plugins: [react()],
   };
 });

@@ -15,15 +15,15 @@ export default defineConfig(({ mode }) => {
       },
     },
     base: "/resumewebsite",
-    // build: {
-    //   rollupOptions: {
-    //     output: {
-    //       entryFileNames: `[name].[hash].js`, // Ensure hashed filenames for cache busting
-    //       chunkFileNames: `[name].[hash].js`,
-    //       assetFileNames: `[name].[hash][extname]`,
-    //     },
-    //   },
-    // },
+    build: {
+      rollupOptions: {
+        output: {
+          entryFileNames: `[name].[hash].js`, // Ensure hashed filenames for cache busting
+          chunkFileNames: `[name].[hash].js`,
+          assetFileNames: `[name].[hash][extname]`,
+        },
+      },
+    },
     plugins: [react()],
   };
 });

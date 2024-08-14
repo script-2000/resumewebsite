@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => {
                 '@': path.resolve(__dirname, "./src"),
             },
         },
-        base: "/resumewebsite/", // Ensure this matches your GitHub Pages path
+        base: "/", // Ensure this matches your GitHub Pages path
         build: {
             rollupOptions: {
                 output: {

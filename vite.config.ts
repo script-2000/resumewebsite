@@ -11,19 +11,19 @@ export default defineConfig(({ mode }) => {
     },
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, "./src"),
+        "@": path.resolve(__dirname, "./src"),
       },
     },
-    base:"/resumewebsite",
-    build: {
-      rollupOptions: {
-          output: {
-              entryFileNames: `[name].[hash].js`,  // Ensure hashed filenames for cache busting
-              chunkFileNames: `[name].[hash].js`,
-              assetFileNames: `[name].[hash][extname]`,
-          },
-      },
-  },
+    base: "/resumewebsite",
+    // build: {
+    //   rollupOptions: {
+    //     output: {
+    //       entryFileNames: `[name].[hash].js`, // Ensure hashed filenames for cache busting
+    //       chunkFileNames: `[name].[hash].js`,
+    //       assetFileNames: `[name].[hash][extname]`,
+    //     },
+    //   },
+    // },
     plugins: [react()],
   };
 });
